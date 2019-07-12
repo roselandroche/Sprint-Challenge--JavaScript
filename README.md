@@ -30,24 +30,44 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.map returns a new array that you can then use as you wish. .forEach doesn't return a new array
+
 2. What is the difference between a function and a method?
+
+A function exists in the global window, a method is a function inside an object. Methods can be built in like .map(), but you can also build in your own.
 
 3. What is closure?
 
+Closure is how we describe an inner scope(higher level) (like a function inside an object) being able to access variables declared one level back/lower. I like to describe it as the closure being one floor up, and the base level scope being the ground floor. The closure can see the ground floor level, but the ground floor can't see up.
+
 4. Describe the four rules of the 'this' keyword.
 
+Rule 1
+If you don't bind .this to something, it gets bound to the window.
+
+Rule 2
+When you create a new object with .this inside, .this refers to the object it was created inside.
+
+Rule 3
+If you create a new object, .this now refers to that object.
+
+Rule 4
+If you call an object with .call and/or .apply, it will explicitly bind .this to the argument you pass in. Basically you call it but go 'Syke! I actually want you to be bound to this other thing!'
+
 5. Why do we need super() in an extended class?
+
+super() is the other half of what makes 'extend' work... You can't have a class inherit properties from the parent without both 'extends' and 'super()', it's just how the language is built
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
+- [x] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
