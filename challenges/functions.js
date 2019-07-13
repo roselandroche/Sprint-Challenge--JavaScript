@@ -16,7 +16,7 @@ function consume(x, y, callback) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 function add(x, y) {
-  return num1 + num2;
+  return x + y;
 }
 
 function multiply(x, y) {
