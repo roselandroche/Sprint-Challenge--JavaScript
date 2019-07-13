@@ -39,7 +39,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // Explanation: 
 
-// nestedFunction is the innermost level of scope and a closure. Therefore it can access and use variables declared outside of its own scope.
+// nestedFunction is the innermost level of scope in this example and it is therefore a closure. Because of this it can access and use variables declared outside of its own scope, in less nested levels of the code.
 
 
 const external = "I'm outside the function";

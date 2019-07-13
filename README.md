@@ -30,7 +30,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-.map returns a new array that you can then use as you wish. .forEach doesn't return a new array
+.map returns a new array that you can then use as you wish. .forEach doesn't return anything
 
 2. What is the difference between a function and a method?
 
@@ -38,18 +38,18 @@ A function exists in the global window, a method is a function inside an object.
 
 3. What is closure?
 
-Closure is how we describe an inner scope(higher level) (like a function inside an object) being able to access variables declared one level back/lower. I like to describe it as the closure being one floor up, and the base level scope being the ground floor. The closure can see the ground floor level, but the ground floor can't see up.
+Closure is how we describe an inner scope(higher level) (like a function inside an object) being able to access variables declared one level back/lower/less nested. I like to describe it as the closure being one floor up, and the base level scope being the ground floor. The closure can see the ground floor level, but the ground floor can't see up.
 
 4. Describe the four rules of the 'this' keyword.
 
 Rule 1
-If you don't bind .this to something, it gets bound to the window.
+If you don't bind .this to something, it gets bound to the window - usually not a good thing.
 
 Rule 2
 When you create a new object with .this inside, .this refers to the object it was created inside.
 
 Rule 3
-If you create a new object, .this now refers to that object.
+If you create a new object, .this now refers to the new object.
 
 Rule 4
 If you call an object with .call and/or .apply, it will explicitly bind .this to the argument you pass in. Basically you call it but go 'Syke! I actually want you to be bound to this other thing!'
@@ -68,7 +68,7 @@ Follow these steps to set up and work on your project:
 - [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [x] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
+- [x] Implement the project on your Branch, committing changes regularly.
 - [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
@@ -86,7 +86,7 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
@@ -98,7 +98,7 @@ Create constructors, bind methods, and create cuboids in this prototypes challen
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
